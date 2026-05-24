@@ -1,0 +1,105 @@
+
+==================================================
+AGENTIC AI RESEARCH ASSISTANT
+==================================================
+
+Research Topic: agentic  AI in healthcare
+
+Step-by-step plan:
+1. Understand the topic and identify the research goal.
+2. Search for relevant research papers using arXiv.
+3. Extract paper titles, authors, dates, summaries, and links.
+4. Extract important keywords from the collected summaries.
+5. Generate a structured mini research report.
+6. Review the report using reflection.
+7. Save the final report in the output folder.
+
+==================================================
+FINAL RESEARCH REPORT
+==================================================
+
+Agentic AI Research Report
+Topic: agentic  AI in healthcare
+Generated on: 2026-05-24 23:21:44
+
+1. Introduction
+This report provides a short research overview of the topic: agentic  AI in healthcare. The application uses an agentic workflow that includes planning, tool use, multi-agent collaboration, and reflection.
+
+2. Key Findings
+The most important keywords found in the retrieved research summaries are:
+agent, agentic, healthcare, security, regulatory, agents, isolation, development, access, prompt
+
+3. Recent Research Papers
+1. Caging the Agents: A Zero Trust Security Architecture for Autonomous AI in Healthcare
+   Authors: Saikat Maiti
+   Published: 2026-03-18
+   Link: http://arxiv.org/abs/2603.17419v1
+   Summary: Autonomous AI agents powered by large language models are being deployed in production with capabilities including shell execution, file system access, database queries, and multi-party communication. Recent red teaming research demonstrates that these agents exhibit critical vulnerabilities in realistic settings: unauthorized compliance with non-owner instructions, sensitive information disclosure, identity spoofing, cross-agent propagation of unsafe practices, and indirect prompt injection through external resources [7]. In healthcare environments processing Protected Health Information, every such vulnerability becomes a potential HIPAA violation. This paper presents a security architecture deployed for nine autonomous AI agents in production at a healthcare technology company. We develop a six-domain threat model for agentic AI in healthcare covering credential exposure, execution capability abuse, network egress exfiltration, prompt integrity failures, database access risks, and fleet configuration drift. We implement four-layer defense in depth: (1) kernel level workload isolation using gVisor on Kubernetes, (2) credential proxy sidecars preventing agent containers from accessing raw secrets, (3) network egress policies restricting each agent to allowlisted destinations, and (4) a prompt integrity framework with structured metadata envelopes and untrusted content labeling. We report results from 90 days of deployment including four HIGH severity findings discovered and remediated by an automated security audit agent, progressive fleet hardening across three VM image generations, and defense coverage mapped to all eleven attack patterns from recent literature. All configurations, audit tooling, and the prompt integrity framework are released as open source.
+
+2. An Overview and Case Study of the Clinical AI Model Development Life Cycle for Healthcare Systems
+   Authors: Charles Lu, Julia Strout, Romane Gauriau, Brad Wright, Fabiola Bezerra De Carvalho Marcruz, Varun Buch, Katherine Andriole
+   Published: 2020-03-02
+   Link: http://arxiv.org/abs/2003.07678v3
+   Summary: Healthcare is one of the most promising areas for machine learning models to make a positive impact. However, successful adoption of AI-based systems in healthcare depends on engaging and educating stakeholders from diverse backgrounds about the development process of AI models. We present a broadly accessible overview of the development life cycle of clinical AI models that is general enough to be adapted to most machine learning projects, and then give an in-depth case study of the development process of a deep learning based system to detect aortic aneurysms in Computed Tomography (CT) exams. We hope other healthcare institutions and clinical practitioners find the insights we share about the development process useful in informing their own model development efforts and to increase the likelihood of successful deployment and integration of AI in healthcare.
+
+3. Securing the Agent: Vendor-Neutral, Multitenant Enterprise Retrieval and Tool Use
+   Authors: Francisco Javier Arceo, Varsha Prasad Narsing
+   Published: 2026-05-06
+   Link: http://arxiv.org/abs/2605.05287v1
+   Summary: Retrieval-Augmented Generation (RAG) and agentic AI systems are increasingly prevalent in enterprise AI deployments. However, real enterprise environments introduce challenges largely absent from academic treatments and consumer-facing APIs: multiple tenants with heterogeneous data, strict access-control requirements, regulatory compliance, and cost pressures that demand shared infrastructure. A fundamental problem underlies existing RAG architectures in these settings: retrieval systems rank documents by relevance--whether through semantic similarity, keyword matching, or hybrid approaches--not by authorization, so a query from one tenant can surface another tenant's confidential data simply because it scores highest. We formalize this gap and analyze additional shortcomings--including tool-mediated disclosure, context accumulation across turns, and client-side orchestration bypass--that arise when agentic systems conflate relevance with authorization. To address these challenges, we introduce a layered isolation architecture combining policy-aware ingestion, retrieval-time gating, and shared inference, enforced through server-side agentic orchestration. This approach centralizes security-critical operations--tool execution authorization, state isolation, and policy enforcement--on the server, creating natural enforcement points for multitenant isolation while allowing client-side frameworks to retain control over agent composition and latency-sensitive operations. We validate the proposed architecture through an open-source implementation in OGX, a vendor-neutral framework that implements an OpenAI-compatible, open-source Responses API with server-side multi-turn orchestration. We evaluate it empirically and show that ABAC gating eliminates cross-tenant leakage while introducing negligible overhead.
+
+4. Security, privacy, and agentic AI in a regulatory view: From definitions and distinctions to provisions and reflections
+   Authors: Shiliang Zhang, Sabita Maharjan
+   Published: 2026-03-19
+   Link: http://arxiv.org/abs/2603.18914v1
+   Summary: The rapid proliferation of artificial intelligence (AI) technologies has led to a dynamic regulatory landscape, where legislative frameworks strive to keep pace with technical advancements. As AI paradigms shift towards greater autonomy, specifically in the form of agentic AI, it becomes increasingly challenging to precisely articulate regulatory stipulations. This challenge is even more acute in the domains of security and privacy, where the capabilities of autonomous agents often blur traditional legal and technical boundaries. This paper reviews the evolving European Union (EU) AI regulatory provisions via analyzing 24 relevant documents published between 2024 and 2025. From this review, we provide a clarification of critical definitions. We deconstruct the regulatory interpretations of security, privacy, and agentic AI, distinguishing them from closely related concepts to resolve ambiguity. We synthesize the reviewed documents to articulate the current state of regulatory provisions targeting different types of AI, particularly those related to security and privacy aspects. We analyze and reflect on the existing provisions in the regulatory dimension to better align security and privacy obligations with AI and agentic behaviors. These insights serve to inform policymakers, developers, and researchers on the compliance and AI governance in the society with increasing algorithmic agencies.
+
+5. Trustworthy AI in the Agentic Lakehouse: from Concurrency to Governance
+   Authors: Jacopo Tagliabue, Federico Bianchi, Ciro Greco
+   Published: 2025-11-20
+   Link: http://arxiv.org/abs/2511.16402v1
+   Summary: Even as AI capabilities improve, most enterprises do not consider agents trustworthy enough to work on production data. In this paper, we argue that the path to trustworthy agentic workflows begins with solving the infrastructure problem first: traditional lakehouses are not suited for agent access patterns, but if we design one around transactions, governance follows. In particular, we draw an operational analogy to MVCC in databases and show why a direct transplant fails in a decoupled, multi-language setting. We then propose an agent-first design, Bauplan, that reimplements data and compute isolation in the lakehouse. We conclude by sharing a reference implementation of a self-healing pipeline in Bauplan, which seamlessly couples agent reasoning with all the desired guarantees for correctness and trust.
+
+4. Practical Applications
+This type of agentic application can support research discovery, academic writing, literature review, and decision support.
+
+5. Limitations
+The report depends on arXiv search results only. It may miss important papers from IEEE, ACM, Springer, ScienceDirect, or other databases.
+
+6. Conclusion
+The system successfully demonstrates an agentic workflow by planning the task, using tools, dividing work between agents, reflecting on the result, and saving the final output.
+
+==================================================
+REFLECTION / ERROR ANALYSIS
+==================================================
+
+Reflection / Error Analysis:
+- The report has an acceptable length for a mini research report.
+- All required sections are present.
+- The report includes research links/sources.
+- Limitations are discussed.
+
+==================================================
+AGENTIC DESIGN PATTERNS USED
+==================================================
+
+1. Reflection
+- Reviewer Agent checks report quality.
+
+2. Tool Use
+- Researcher Agent uses arXiv search and keyword extraction tools.
+
+3. Planning
+- Planner Agent creates a workflow before execution.
+
+4. Multi-Agent Systems
+- Multiple specialized agents work together.
+
+==================================================
+LATENCY AND COST OPTIMIZATION
+==================================================
+
+- Limited paper retrieval reduces latency.
+- OpenAI API is optional.
+- Lightweight keyword extraction is used.
+- Modular design improves maintainability.
